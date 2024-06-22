@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.front {
+    background-image: url(img/nav.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.64;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 23px;
+}
+
+nav span img {
+    width: 173px;
+    position: relative;
+    z-index: 10;
+    /* to pop out of background */
+}
+
+nav .button {
+    position: relative;
+    z-index: 10;
+
+}
+
+
+
+.button select {
+    position: relative;
+    padding: 5px;
+    width: 140px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 0.1px solid #6c6666;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+
+    appearance: none;
+    /* to remove the default arrow of select button */
+}
+
+.button button {
+    padding: 8px;
+    width: 90px;
+    background-color: #e31717;
+    border: 1px;
+    border-radius: 3px;
+    color: white;
+}
+
+.button .lang {
+    position: absolute;
+    z-index: 1;
+    right: 11rem;
+    top: 9px;
+    filter: invert(1);
+
+    /* helpful to make any svg color white filter: invert(1);*/
+    stroke-width: 0.7;
+}
+
+.button svg {
+    position: absolute;
+    right: 6rem;
+    top: 10px;
+}
+
+.button {
+    gap: 16px;
+    display: flex;
+}
+
+.button button:hover {
+    background-color: rgb(197, 18, 18);
+}
+
+/* to put lang svg over select tag */
+
+
+
+/* Seperate */
+
+.hero {
+    height: 100%;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    gap: 23px;
+    /* padding: 30px; */
+    margin-bottom: -97px;
+
+}
+
+.hero {
+    transform: translateY(-60px);
+}
+
+.first {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-size: 26px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 23px;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text input {
+    padding: 20px;
+    width: 380px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+    border: 1px solid #555151;
+    font-size: 19px;
+}
+
+.text button {
+    width: 237px;
+    height: 61px;
+    font-size: 32px;
+    background-color: #e31717;
+    color: white;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.text button:hover {
+    background-color: rgb(197, 18, 18);
+}
+
+.text svg {
+    fill: white;
+}
+
+/* Seperate */
+/* to seperate the context */
+.seperation {
+    height: 8px;
+    background-color: #6a6969;
+    opacity: 0.4;
+    width: 100%;
+}
+
+/* Seperate */
+
+.video {
+    display: flex;
+    padding: 63px 45px;
+    font-size: 29px;
+    /* padding-bottom: 40px; */
+}
+
+.video .h {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+}
+
+.video p {
+    margin-left: 130px;
+}
+
+.tv {
+    position: relative;
+    z-index: 10;
+    /* to show the remote of tv above the vdo */
+    margin-right: 40px;
+}
+
+.vdo {
+    position: absolute;
+    z-index: -1;
+    /* object-fit: contain; */
+    /* right: 10rem; */
+    top: 21%;
+    left: 13%;
+
+
+}
+
+
+
+/* Seperate */
+
+.second {
+    display: flex;
+    /* flex-direction: row; */
+    width: 80vw;
+    margin: auto;
+    padding: 46px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgg {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.subimage {
+    position: absolute;
+    z-index: 1;
+    border: 2px solid rgb(78, 77, 77);
+    background-color: black;
+    display: flex;
+    gap: 26px;
+    width: 260px;
+    padding: 14px;
+    border-radius: 16px;
+    left: 20%;
+    top: 61%;
+    /* transform: translateX(-390px) translateY(-69px); */
+}
+
+.subimage1 img {
+    width: 63px;
+}
+
+.subtext {
+    color: white;
+    display: flex;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 12px; */
+}
+
+.txt h3 {
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.subtext span {
+    color: #0071eb;
+    font-size: 18px;
+}
+
+.gif img {
+    width: 3rem;
+}
+
+.text2 {
+    color: white;
+    padding: 23px;
+
+}
+
+.text2 h1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.text2 span {
+    font-size: 25px;
+}
+
+/* Seperate */
+
+
+
+.video2 {
+    display: flex;
+    padding: 63px 45px;
+    font-size: 29px;
+    /* padding-bottom: 40px; */
+}
+
+.video2 .h2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+}
+
+.video2 p {
+    margin-left: 130px;
+}
+
+.tv2 {
+    position: relative;
+    z-index: 1;
+    /* to show the remote of tv above the vdo */
+    margin-right: 40px;
+}
+
+.vdo2 {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+
+    top: -7%;
+    right: 20%;
+}
+
+/* Seperate */
+.image2 {
+    display: flex;
+    padding: 63px 134px;
+    font-size: 29px;
+}
+
+.image2 img {
+    max-width: 513px;
+    max-height: 367px;
+}
+
+.image2 .text3 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+}
+
+/* Seperate */
+.faq {
+    padding: 36px;
+}
+
+.faq h1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.subfaq img {
+    filter: invert(1);
+}
+
+.subfaq {
+    max-width: 70vw;
+    background-color: rgb(45, 45, 45);
+    margin: 11px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.subfaq:hover {
+    transition: all 1s ease-out;
+    background-color: #6a6969;
+}
+
+.tuxt {
+    padding: 31px;
+    width: 53vw;
+    margin: auto;
+}
+
+.tuxt span {
+    font-size: 23px;
+}
+
+.faq .text {
+    padding-bottom: 86px;
+}
+
+/* Seperate */
+footer {}
+
+footer .last {
+    max-width: 75vw;
+    margin: auto;
+    padding: 32px;
+}
+
+.last span,
+a {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    text-decoration: underline solid rgba(255, 255, 255, 0.7);
+}
+
+.grid div {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.eng {
+    max-width: 75vw;
+    margin: auto;
+    padding-bottom: 67px;
+    position: relative;
+}
+
+.eng select {
+    position: relative;
+    padding: 5px;
+    width: 140px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 0.1px solid #6c6666;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    appearance: none;
+    /* to remove the default arrow of select button */
+}
+
+.eng .lang {
+    position: absolute;
+    z-index: 1;
+    left: 1%;
+    bottom: 123px;
+    filter: invert(1);
+
+    /* helpful to make any svg color white filter: invert(1);*/
+    stroke-width: 0.7;
+}
+
+.eng svg {
+    position: absolute;
+    left: 6rem;
+    bottom: 84%;
+}
+
+.netflix {
+    padding: 14px 0;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+/* Seperate */
+
+
+@media only screen and (max-width:700px) {
+    body {
+        width: 130%;
+    }
+    .seperation {
+        height: 8px;
+        background-color: #6a6969;
+        opacity: 0.4;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+
+        align-items: center;
+        max-width: 90vw;
+        margin: auto;
+        gap: 23px;
+    }
+
+    nav .button .lang,
+    svg {
+        display: none;
+
+
+    }
+
+    nav select {
+        max-width: 105px;
+    }
+
+    nav span img {
+
+        max-width: 105px;
+
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .h {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .text input {
+        width: 301px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .faq h1 {
+        font-size: 32px;
+    }
+
+    .h h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+    .h2 h1{
+        font-size: 39px;
+       
+    }
+    .h2 p {
+        transform: translate(-47px);
+    }
+
+    .first {
+        font-size: 42px;
+
+    }
+
+    .text2 h1 {
+        font-size: 38px;
+        text-align: center;
+
+
+    }
+
+    .text2 span,
+    .h p {
+        font-size: 23px;
+        text-align: center;
+        transform: translateX(-57px);
+    }
+
+    span,
+    p {
+        font-size: 21px;
+    }
+
+    
+}
+@media only screen and (max-width:800px){
+    /* to Reverse the context of div ...use flex wrap and remove flex-direction:column */
+    .image {
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+    }
+
+    .imgg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgg>img {
+        width: 344px;
+
+    }
+
+    .subimage {
+        transform: translate(-50px, 17px);
+    }
+
+    .subimage1 img {
+        width: 42px;
+    }
+
+    .image2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+    }
+}
+@media only screen and (max-width:600px) {
+
+    .tv img{
+        max-width: 393px;
+        overflow: hidden;
+        transform: translateX(28px);
+    }
+
+    #video1 {
+        max-width: 317px;
+        transform: translateY(-10px);
+
+    }
+
+    .imgg {
+        max-width: 317px;
+
+    }
+    .tv2 img{
+        max-width: 383px;
+        
+    }
+    #vdo2{
+        max-width: 383px;
+        transform: translate(68px, -13px);
+    }
+
+    .text3 h1{
+        font-size: 40px;
+        margin: -91px;
+        text-align: center;
+        transform: translate(0px, -10px);
+
+    }
+    .text3 span{
+        margin: -91px;
+        text-align: center;
+        transform: translateY(184px);
+
+    }
+    .image2 img{
+        max-width: 366px;
+        transform: translate(-198px, 164px);
+        padding: 93px;
+
+    }
+
+   
+}
+
+@media only screen and (max-width:900px) {
+
+    .video,
+    .video2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* gap: 25px; */
+    }
+}
